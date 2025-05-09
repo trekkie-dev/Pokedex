@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokédex</title>
-  <link rel="stylesheet" href="/styles/styles.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-
-</head>
-<body>
-  <div class="top-bar">
-    <div class="app-logo">
-      <img src="/assets/pokedex.svg" alt="Pokedex Logo" class="pokedex-logo">
-      <h1 class="pokedex-title">National Dex</h1>
-    </div>
-    <span class="search-icon material-icons">menu</span>
-  </div>
-  <h1 class="search-heading">Which Pokémon are you looking for?</h1>
-  <section class="search-container">
-    <div class="search-bar-container">
-      <span class="search-icon material-icons">search</span>
-      <input type="text" class="search-bar" placeholder="Search for a Pokémon." id="search-input">
-      <span class="clear-icon material-icons">close</span>
-    </div>
-    <button class="pokemon-filter">
-      <span class="filter-icon material-icons">filter_list</span>
-    </button>
-    <div class="filter-cluster" id="filter-cluster">
-      <div class="number">
-        <input type="radio" id="pokemon-number" name="pokemon-filter">
-        <label for="pokemon-number" class="filter-label">Number</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- App Bar -->
+    <div class="app-bar">
+      <div class="app-bar__logo">
+        <img
+          src="/assets/pokedex.svg"
+          alt="Pokedex Logo"
+          class="app-bar__pokeball"
+        />
+        <h1 class="app-bar__title">National Dex</h1>
       </div>
-      <div class="name">
-        <input type="radio" id="pokemon-name" name="pokemon-filter">
-        <label for="pokemon-name" class="filter-label">Name</label>
-      </div>
+      <span class="search-icon material-icons">menu</span>
     </div>
-  </section>
+    <!-- Search -->
+    <h1 class="search-heading">Which Pokémon are you looking for?</h1>
+    <section class="search-container">
+      <div class="search-bar-container">
+        <span class="search-icon material-icons">search</span>
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search for a Pokémon."
+          id="search-input"
+        />
+        <span class="clear-icon material-icons">close</span>
+      </div>
+    </section>
     <section class="pokemon-list">
-      <h1 class="pokemon-not-found">Gah! Pokémon not found! Try your search again.</h1>
+      <h1 class="pokemon-not-found">
+        Gah! Pokémon not found! Try your search again.
+      </h1>
     </section>
 
-  <script src="./scripts/pokemon.js"></script>
-</body>
+    <script src="./scripts/pokemon.js"></script>
+  </body>
 </html>

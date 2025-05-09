@@ -6,32 +6,28 @@ body {
   margin: 0;
 }
 
-.top-bar {
+.app-bar {
   margin: 10px 20px 0 20px;
   display: flex;
   color: var(--antiflash-white);
   align-items: center;
   justify-content: space-between;
 
-  .app-logo {
+  .app-bar__logo {
     display: flex;
     align-items: center;
   }
-  .pokedex-logo {
+  .app-bar__pokeball {
     height: 24px;
     color: var(--antiflash-white);
     margin-right: 15px;
   }
 
-  .pokedex-title {
+  .app-bar__title {
     font-size: 24px;
     margin: 0;
     color: var(--pokeball-red);
     font-weight: 600;
-  }
-
-  .settings-icon {
-    color: var(--antiflash-white);
   }
 }
 
@@ -51,7 +47,7 @@ body {
 
   .search-bar-container {
     background-color: var(--night-black);
-    width: 90%;
+    width: 100%;
     border-radius: 30px;
     border: 1px solid var(--pokemon-blue);
     height: 40px;
